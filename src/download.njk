@@ -1,0 +1,51 @@
+---
+layout: base.njk
+title: Clash for Windows 下载中心 - Windows macOS Android iOS
+description: Clash for Windows 下载中心整理 Windows、macOS、Android、iOS 四类客户端资料与安装前准备说明。
+permalink: /download.html
+---
+<section class="page-hero download-hero">
+  <div class="container">
+    <p class="eyebrow">Download Center</p>
+    <h1>Clash for Windows 下载中心</h1>
+    <p>按平台整理客户端资料、安装前准备事项和配置入口，便于桌面端与移动端用户快速选择。</p>
+  </div>
+</section>
+
+<section class="section-block">
+  <div class="container">
+    <div class="download-grid four">
+      {% set downloads = [
+        ["Windows 版", "Clash for Windows Windows 下载", "windows-ban", "适合 Windows 10 / 11 桌面环境，建议先阅读安装教程并备份旧配置。"],
+        ["macOS 版", "Clash for Windows macOS 下载", "macos-ban", "适合 macOS 桌面环境，注意系统权限、代理开关和配置文件位置。"],
+        ["Android 版", "Clash for Windows Android 下载", "android-ban", "适合安卓移动端参考，重点关注订阅导入、开关状态与后台运行。"],
+        ["iOS 版", "Clash for Windows iOS 下载", "ios-ban", "适合 iPhone 与 iPad 用户参考相近客户端的配置方式。"]
+      ] %}
+      {% for item in downloads %}
+      <article class="download-card" id="{{ item[2] }}">
+        <img src="https://tse-mm.bing.com/th?q={{ item[1] | urlEncode }}" alt="{{ item[1] }}资料图" width="520" height="320" loading="lazy">
+        <div>
+          <h2>{{ item[0] }}</h2>
+          <p>{{ item[3] }}</p>
+          <a class="btn small" href="/blog/clash-for-windows-install-guide/">查看安装教程</a>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section-block muted">
+  <div class="container two-column">
+    <article>
+      <h2>安装前准备</h2>
+      <p>准备好可用配置、确认系统时间准确，并关闭占用相同端口的旧程序。首次启动后建议先检查控制台日志，再切换到常用策略组。</p>
+    </article>
+    <aside class="check-list">
+      <span>确认系统版本</span>
+      <span>准备订阅地址</span>
+      <span>记录原有配置</span>
+      <span>查看连接日志</span>
+    </aside>
+  </div>
+</section>

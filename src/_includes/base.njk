@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ title or site.name }}</title>
+    <meta name="description" content="{{ description or site.description }}">
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="stylesheet" href="/assets/styles.css">
+    <meta property="og:title" content="{{ title or site.name }}">
+    <meta property="og:description" content="{{ description or site.description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:image" content="{{ cover or site.logo }}">
+    {% if video %}
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "{{ title }}",
+        "description": "{{ description }}",
+        "thumbnailUrl": ["{{ cover }}"],
+        "uploadDate": "{{ page.date | htmlDate }}",
+        "embedUrl": "{{ video.embed }}"
+      }
+    </script>
+    {% endif %}
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="/">
+          <img src="{{ site.logo }}" alt="Clash for Windows Lab 标识" width="48" height="48">
+          <span>Clash for Windows Lab</span>
+        </a>
+        <nav class="main-nav" aria-label="主导航">
+          <a href="/">首页</a>
+          <a href="/blog/">博客</a>
+          <a href="/download.html">下载中心</a>
+          <a href="/tags/">Tags</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      {{ content | safe }}
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <section>
+          <h2>Clash for Windows Lab</h2>
+          <p>整理跨平台客户端资料、安装步骤、配置思路与日常使用记录。</p>
+        </section>
+        <nav aria-label="底部导航">
+          <a href="/">Clash for Windows 资源中心</a>
+          <a href="/blog/">Clash for Windows 使用笔记</a>
+          <a href="/download.html">Clash for Windows 下载中心</a>
+          <a href="/sitemap.xml">站点地图</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

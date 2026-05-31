@@ -1,0 +1,19 @@
+{
+  "name": "clash-for-windows-pages",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "eleventy --serve",
+    "build": "eleventy",
+    "generate:article": "node scripts/generate-article.mjs",
+    "push:bing": "node scripts/push-bing.mjs"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "gray-matter": "^4.0.3"
+  }
+}

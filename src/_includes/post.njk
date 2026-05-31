@@ -1,0 +1,35 @@
+---
+layout: base.njk
+---
+<article class="post-hero">
+  <div class="container post-header">
+    <p class="eyebrow">Clash for Windows Guide</p>
+    <h1>{{ title }}</h1>
+    <p>{{ description }}</p>
+    <div class="tag-row">
+      {% for tag in tags | publicTags %}
+      <a href="/tags/{{ tag | tagSlug }}/">{{ tag }}</a>
+      {% endfor %}
+    </div>
+    <img class="post-cover" src="{{ cover }}" alt="{{ title }}封面图" width="960" height="560" loading="eager">
+  </div>
+</article>
+
+<section class="section-block">
+  <div class="container post-layout">
+    <div class="post-content">
+      {{ content | safe }}
+      {% if video %}
+      <h2>{{ title }}视频教程</h2>
+      <p>{{ video.description }}</p>
+      <iframe class="video-frame" src="{{ video.embed }}" title="{{ title }}" loading="lazy" allowfullscreen></iframe>
+      {% endif %}
+    </div>
+    <aside class="side-panel">
+      <h2>目录</h2>
+      <a href="/blog/">返回博客</a>
+      <a href="/download.html">下载中心</a>
+      <a href="/tags/">Tags</a>
+    </aside>
+  </div>
+</section>

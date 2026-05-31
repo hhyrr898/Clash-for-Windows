@@ -1,0 +1,21 @@
+---
+layout: base.njk
+title: Clash for Windows Tags - 主题聚合
+description: Clash for Windows Tags 聚合安装、配置、下载、连接检查与多平台内容。
+permalink: /tags/
+---
+<section class="page-hero compact">
+  <div class="container">
+    <p class="eyebrow">Tags</p>
+    <h1>Clash for Windows Tags</h1>
+    <p>按主题查看 Clash for Windows 相关内容。</p>
+  </div>
+</section>
+
+<section class="section-block">
+  <div class="container tag-cloud large">
+    {% for tag in collections.tagList %}
+    <a href="/tags/{{ tag | tagSlug }}/">{{ tag }}</a>
+    {% endfor %}
+  </div>
+</section>

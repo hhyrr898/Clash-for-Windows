@@ -1,0 +1,33 @@
+---
+layout: base.njk
+pagination:
+  data: collections.tagList
+  size: 1
+  alias: tag
+permalink: /tags/{{ tag | tagSlug }}/
+eleventyComputed:
+  title: "Clash for Windows {{ tag }} - 主题文章"
+  description: "查看 Clash for Windows {{ tag }} 相关安装、配置与使用文章。"
+---
+<section class="page-hero compact">
+  <div class="container">
+    <p class="eyebrow">Tags</p>
+    <h1>Clash for Windows {{ tag }}</h1>
+    <p>当前主题下的文章整理。</p>
+  </div>
+</section>
+
+<section class="section-block">
+  <div class="container article-list">
+    {% for post in collections[tag] | reverse %}
+    <article class="list-card">
+      <img src="{{ post.data.cover }}" alt="{{ post.data.title }}配图" width="360" height="220" loading="lazy">
+      <div>
+        <time datetime="{{ post.date | htmlDate }}">{{ post.date | readableDate }}</time>
+        <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+        <p>{{ post.data.description }}</p>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>

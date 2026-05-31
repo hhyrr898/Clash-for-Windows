@@ -17,7 +17,9 @@ permalink: /blog/
     <div class="article-list">
       {% for post in collections.postsByDate %}
       <article class="list-card">
-        <img src="{{ post.data.cover }}" alt="{{ post.data.title }}文章配图" width="360" height="220" loading="lazy">
+        <a href="{{ post.url }}" aria-label="阅读{{ post.data.title }}">
+          <img src="{{ post.data.cover }}" alt="{{ post.data.title }}文章配图" width="360" height="220" loading="lazy">
+        </a>
         <div>
           <time datetime="{{ post.date | htmlDate }}">{{ post.date | readableDate }}</time>
           <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
@@ -36,7 +38,7 @@ permalink: /blog/
       <a href="/blog/clash-for-windows-install-guide/">安装教程</a>
       <a href="/blog/clash-for-windows-profile-import/">配置导入</a>
       <a href="/blog/clash-for-windows-network-check/">连接检查</a>
-      <a href="/download.html">下载中心</a>
+      <a href="/dows.html">下载中心</a>
       <h2>Tags</h2>
       <div class="tag-cloud">
         {% for tag in collections.tagList %}

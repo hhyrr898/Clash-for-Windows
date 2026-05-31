@@ -1,4 +1,4 @@
-# Clash for Windows Lab
+# Clash for Windows
 
 Eleventy 静态站点，适配 GitHub Pages 与 Cloudflare Pages。
 

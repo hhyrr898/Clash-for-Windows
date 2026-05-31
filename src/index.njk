@@ -1,6 +1,6 @@
 ---
 layout: base.njk
-title: Clash for Windows 资源中心 - 桌面客户端使用指南
+title: Clash for Windows  - Clash for Windows下载
 description: Clash for Windows 资源中心提供 Windows、macOS、Android、iOS 客户端整理、安装教程、配置说明与常见场景记录。
 permalink: /
 ---
@@ -11,7 +11,7 @@ permalink: /
       <h1>Clash for Windows 资源中心</h1>
       <p>从安装准备、订阅配置到多设备使用，这里以清晰的步骤和场景化内容帮助你更稳妥地完成客户端设置。</p>
       <div class="hero-actions">
-        <a class="btn primary" href="/download.html">进入下载中心</a>
+        <a class="btn primary" href="/dows.html">进入下载中心</a>
         <a class="btn ghost" href="#latest">查看更新</a>
       </div>
     </article>
@@ -40,21 +40,23 @@ permalink: /
     <div class="section-heading">
       <p class="eyebrow">Download Center</p>
       <h2>平台版本</h2>
-      <a href="/download.html">查看全部版本</a>
+      <a href="/dows.html">查看全部版本</a>
     </div>
     <div class="download-strip">
       {% set platforms = [
-        ["Windows 版", "Clash for Windows Windows 版安装包", "适合 Windows 10 / 11 桌面环境，提供基础配置与启动说明。", "windows-ban"],
-        ["macOS 版", "Clash for Windows macOS 版", "适合苹果电脑用户查看桌面代理客户端准备流程。", "macos-ban"],
-        ["Android 版", "Clash for Windows Android 版", "适合移动端场景，整理导入订阅与网络切换要点。", "android-ban"],
-        ["iOS 版", "Clash for Windows iOS 版", "适合 iPhone 与 iPad 用户了解相近客户端使用方式。", "ios-ban"]
+        ["Windows 版", "Clash for Windows Windows 版安装包", "适合 Windows 10 / 11 桌面环境，提供基础配置与启动说明。", "windows-ban", "/blog/clash-for-windows-install-guide/"],
+        ["macOS 版", "Clash for Windows macOS 版", "适合苹果电脑用户查看桌面代理客户端准备流程。", "macos-ban", "/blog/clash-for-windows-macos-setup/"],
+        ["Android 版", "Clash for Windows Android 版", "适合移动端场景，整理导入订阅与网络切换要点。", "android-ban", "/blog/clash-for-windows-android-guide/"],
+        ["iOS 版", "Clash for Windows iOS 版", "适合 iPhone 与 iPad 用户了解相近客户端使用方式。", "ios-ban", "/blog/clash-for-windows-ios-guide/"]
       ] %}
       {% for item in platforms %}
       <article class="mini-card">
-        <img src="https://tse-mm.bing.com/th?q={{ item[1] | urlEncode }}" alt="{{ item[1] }}示意图" width="320" height="200" loading="lazy">
+        <a href="{{ item[4] }}" aria-label="阅读{{ item[0] }}相关文章">
+          <img src="https://tse-mm.bing.com/th?q={{ item[1] | urlEncode }}" alt="{{ item[1] }}示意图" width="320" height="200" loading="lazy">
+        </a>
         <h3>{{ item[0] }}</h3>
         <p>{{ item[2] }}</p>
-        <a href="/download.html#{{ item[3] }}">查看详情</a>
+        <a href="/dows.html#{{ item[3] }}">查看详情</a>
       </article>
       {% endfor %}
     </div>
@@ -88,7 +90,9 @@ permalink: /
     <div class="article-grid">
       {% for post in collections.postsByDate | limit(12) %}
       <article class="article-card">
-        <img src="{{ post.data.cover }}" alt="{{ post.data.title }}配图" width="420" height="260" loading="lazy">
+        <a href="{{ post.url }}" aria-label="阅读{{ post.data.title }}">
+          <img src="{{ post.data.cover }}" alt="{{ post.data.title }}配图" width="420" height="260" loading="lazy">
+        </a>
         <div>
           <time datetime="{{ post.date | htmlDate }}">{{ post.date | readableDate }}</time>
           <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
@@ -108,19 +112,21 @@ permalink: /
     </div>
     <div class="feature-grid">
       {% set scenes = [
-        ["远程办公配置", "Clash for Windows 远程办公配置", "将常用应用、浏览器与开发工具按规则拆分，降低切换成本。"],
-        ["浏览器分流", "Clash for Windows 浏览器分流", "了解系统代理与浏览器代理的差别，减少重复设置。"],
-        ["订阅维护", "Clash for Windows 订阅维护", "记录节点更新、过期检查与备份方式。"],
-        ["规则管理", "Clash for Windows 规则管理", "用清晰命名整理策略组，让日常使用更直观。"],
-        ["启动项设置", "Clash for Windows 开机启动", "根据个人电脑习惯决定是否随系统启动。"],
-        ["日志查看", "Clash for Windows 日志查看", "通过日志判断订阅、端口和网络状态。"],
-        ["便携使用", "Clash for Windows 便携设置", "适合多台电脑之间迁移配置文件的用户。"],
-        ["移动协同", "Clash for Windows 多设备协同", "让桌面端与移动端保持相近的使用方式。"]
+        ["远程办公配置", "Clash for Windows 远程办公配置", "将常用应用、浏览器与开发工具按规则拆分，降低切换成本。", "/blog/clash-for-windows-proxy-mode/"],
+        ["浏览器分流", "Clash for Windows 浏览器分流", "了解系统代理与浏览器代理的差别，减少重复设置。", "/blog/clash-for-windows-proxy-mode/"],
+        ["订阅维护", "Clash for Windows 订阅维护", "记录节点更新、过期检查与备份方式。", "/blog/clash-for-windows-profile-import/"],
+        ["规则管理", "Clash for Windows 规则管理", "用清晰命名整理策略组，让日常使用更直观。", "/blog/clash-for-windows-rule-groups/"],
+        ["启动项设置", "Clash for Windows 开机启动", "根据个人电脑习惯决定是否随系统启动。", "/blog/clash-for-windows-startup/"],
+        ["日志查看", "Clash for Windows 日志查看", "通过日志判断订阅、端口和网络状态。", "/blog/clash-for-windows-log-reading/"],
+        ["便携使用", "Clash for Windows 便携设置", "适合多台电脑之间迁移配置文件的用户。", "/blog/clash-for-windows-update-notes/"],
+        ["移动协同", "Clash for Windows 多设备协同", "让桌面端与移动端保持相近的使用方式。", "/blog/clash-for-windows-android-guide/"]
       ] %}
       {% for scene in scenes %}
       <article class="feature-card">
-        <img src="https://tse-mm.bing.com/th?q={{ scene[1] | urlEncode }}" alt="{{ scene[1] }}场景图" width="360" height="220" loading="lazy">
-        <h3>{{ scene[0] }}</h3>
+        <a href="{{ scene[3] }}" aria-label="阅读{{ scene[0] }}相关文章">
+          <img src="https://tse-mm.bing.com/th?q={{ scene[1] | urlEncode }}" alt="{{ scene[1] }}场景图" width="360" height="220" loading="lazy">
+        </a>
+        <h3><a href="{{ scene[3] }}">{{ scene[0] }}</a></h3>
         <p>{{ scene[2] }}</p>
       </article>
       {% endfor %}

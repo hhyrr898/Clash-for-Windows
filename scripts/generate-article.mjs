@@ -94,10 +94,19 @@ imageQuery: 用于图片检索的中文短语，必须包含 Clash for Windows
 
   await fs.writeFile(filePath, markdown, "utf8");
   console.log(`created ${path.relative(root, filePath)}`);
+  return `/blog/${finalSlug}/`;
 }
 
+const createdUrls = [];
 await fs.mkdir(blogDir, { recursive: true });
 
 for (let i = 0; i < count; i += 1) {
-  await createArticle(i);
+  const url = await createArticle(i);
+  createdUrls.push(url);
 }
+
+await fs.writeFile(
+  path.join(root, ".generated-urls.json"),
+  JSON.stringify({ urls: createdUrls }, null, 2),
+  "utf8"
+);

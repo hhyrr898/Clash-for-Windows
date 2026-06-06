@@ -7,7 +7,9 @@
     "dev": "eleventy --serve",
     "build": "eleventy",
     "generate:article": "node scripts/generate-article.mjs",
-    "push:bing": "node scripts/push-bing.mjs"
+    "push:bing": "node scripts/push-bing.mjs --mode updated",
+    "push:bing:updated": "node scripts/push-bing.mjs --mode updated",
+    "push:bing:all": "node scripts/push-bing.mjs --mode all"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2"

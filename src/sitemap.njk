@@ -4,12 +4,36 @@ eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-{% for item in collections.all %}
-{% if item.url and not item.data.noindex %}
   <url>
-    <loc>{{ site.url }}{{ item.url }}</loc>
-    <lastmod>{{ item.date | htmlDate }}</lastmod>
+    <loc>{{ site.url }}/</loc>
+    <lastmod>{{ collections.postsByDate[0].date | htmlDate }}</lastmod>
   </url>
-{% endif %}
+  <url>
+    <loc>{{ site.url }}/blog/</loc>
+    <lastmod>{{ collections.postsByDate[0].date | htmlDate }}</lastmod>
+  </url>
+  <url>
+    <loc>{{ site.url }}/tags/</loc>
+    <lastmod>{{ collections.postsByDate[0].date | htmlDate }}</lastmod>
+  </url>
+  <url>
+    <loc>{{ site.url }}/download.html</loc>
+    <lastmod>{{ collections.postsByDate[0].date | htmlDate }}</lastmod>
+  </url>
+  <url>
+    <loc>{{ site.url }}/dows.html</loc>
+    <lastmod>{{ collections.postsByDate[0].date | htmlDate }}</lastmod>
+  </url>
+{% for post in collections.postsByDate %}
+  <url>
+    <loc>{{ site.url }}{{ post.url }}</loc>
+    <lastmod>{{ post.date | htmlDate }}</lastmod>
+  </url>
+{% endfor %}
+{% for tag in collections.tagList %}
+  <url>
+    <loc>{{ site.url }}/tags/{{ tag | tagSlug }}/</loc>
+    <lastmod>{{ collections.postsByDate[0].date | htmlDate }}</lastmod>
+  </url>
 {% endfor %}
 </urlset>

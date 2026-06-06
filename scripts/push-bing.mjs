@@ -1,60 +1,61 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 
-const siteUrl = (process.env.SITE_URL || "").replace(/\/$/, "");
-const key = process.env.BING_INDEXNOW_KEY;
 const root = process.cwd();
-const args = process.argv.slice(2);
-const fullSite = args.includes("--all") || process.env.PUSH_ALL === "true";
+const siteUrl = (process.env.SITE_URL || "").trim().replace(/\/$/, "");
+const apiKey = (process.env.BING_API_KEY || "").trim();
 
-if (!siteUrl) throw new Error("Missing SITE_URL");
-if (!key) throw new Error("Missing BING_INDEXNOW_KEY");
-
-function fileToUrl(file) {
-  const normalized = file.replaceAll("\\", "/");
-  if (!normalized.startsWith("src/blog/") || !normalized.endsWith(".md")) return null;
-  const content = normalized.split("/");
-  const filename = content.at(-1).replace(/\.md$/, "");
-  return `${siteUrl}/blog/${filename}/`;
+function getMode() {
+  const arg = process.argv.find((item) => item.startsWith("--mode="));
+  if (arg) return arg.split("=")[1];
+  if (process.argv.includes("--all")) return "all";
+  return "updated";
 }
 
-async function urlsFromSitemap() {
-  const sitemapPath = path.join(root, "_site", "sitemap.xml");
-  const xml = await fs.readFile(sitemapPath, "utf8");
-  return [...xml.matchAll(/<loc>(.*?)<\/loc>/g)].map((match) => match[1]);
+async function readUpdatedUrls() {
+  const file = path.join(root, ".generated-urls.json");
+  const data = JSON.parse(await fs.readFile(file, "utf8"));
+  return (data.urls || []).map((url) => `${siteUrl}${url}`);
 }
 
-async function urlsFromChangedFiles() {
-  const changed = process.env.CHANGED_FILES || "";
-  return changed
-    .split(/\r?\n/)
-    .map((line) => line.trim())
-    .filter(Boolean)
-    .map(fileToUrl)
-    .filter(Boolean);
+async function readAllUrls() {
+  const sitemap = await fs.readFile(path.join(root, "_site", "sitemap.xml"), "utf8");
+  return [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map((match) => match[1]);
 }
 
-const urlList = [...new Set(fullSite ? await urlsFromSitemap() : await urlsFromChangedFiles())];
+async function submit(urls) {
+  if (!apiKey) {
+    console.log("Skip Bing submission: BING_API_KEY is not set.");
+    return;
+  }
+  if (!siteUrl) {
+    console.log("Skip Bing submission: SITE_URL is not set.");
+    return;
+  }
+  if (!urls.length) {
+    console.log("No URLs to submit.");
+    return;
+  }
 
-if (!urlList.length) {
-  console.log("no urls to submit");
-  process.exit(0);
+  const endpoint = `https://ssl.bing.com/webmaster/api.svc/json/SubmitUrlbatch?apikey=${encodeURIComponent(apiKey)}`;
+  const response = await fetch(endpoint, {
+    method: "POST",
+    headers: { "Content-Type": "application/json; charset=utf-8" },
+    body: JSON.stringify({ siteUrl, urlList: urls })
+  });
+
+  const text = await response.text();
+  if (!response.ok) {
+    if (text.includes("InvalidApiKey")) {
+      throw new Error(
+        `Bing API key is invalid. Regenerate the key in Bing Webmaster Tools and ensure ${siteUrl} is verified. Response: ${text}`
+      );
+    }
+    throw new Error(`Bing submission failed: ${response.status} ${text}`);
+  }
+  console.log(`Submitted ${urls.length} URL(s) to Bing for ${siteUrl}.`);
 }
 
-const endpoint = "https://www.bing.com/indexnow";
-const response = await fetch(endpoint, {
-  method: "POST",
-  headers: { "content-type": "application/json; charset=utf-8" },
-  body: JSON.stringify({
-    host: new URL(siteUrl).host,
-    key,
-    keyLocation: `${siteUrl}/${key}.txt`,
-    urlList
-  })
-});
-
-if (!response.ok) {
-  throw new Error(`Bing push failed: ${response.status} ${await response.text()}`);
-}
-
-console.log(`submitted ${urlList.length} url(s)`);
+const mode = getMode();
+const urls = mode === "all" ? await readAllUrls() : await readUpdatedUrls();
+await submit(urls);

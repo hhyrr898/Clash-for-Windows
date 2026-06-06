@@ -9,10 +9,14 @@ on:
         description: "Generate 1-9 articles"
         required: true
         default: "1"
+        type: choice
+        options: ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
       push_all:
-        description: "Submit every public URL"
+        description: "Submit all URLs or only updated articles"
         required: true
         default: "false"
+        type: choice
+        options: ["false", "true"]
 
 permissions:
   contents: write
@@ -39,39 +43,30 @@ jobs:
           ARTICLE_COUNT: ${{ github.event.inputs.count || '1' }}
         run: npm run generate:article -- --count=${ARTICLE_COUNT}
 
-      - name: Collect changed articles
-        id: changes
-        run: |
-          git status --short src/blog
-          git diff --name-only -- src/blog > changed-files.txt
-          git ls-files --others --exclude-standard src/blog >> changed-files.txt
-          sort -u changed-files.txt -o changed-files.txt
-          {
-            echo "files<<EOF"
-            cat changed-files.txt
-            echo "EOF"
-          } >> "$GITHUB_OUTPUT"
-
       - name: Commit and push
-        if: steps.changes.outputs.files != ''
+        id: commit
         run: |
+          git add src/blog
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add src/blog
           git commit -m "Add daily Clash for Windows article"
           git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
 
       - name: Build site
-        if: steps.changes.outputs.files != '' || github.event.inputs.push_all == 'true'
+        if: steps.commit.outputs.changed == 'true' || github.event.inputs.push_all == 'true'
         env:
-          SITE_URL: ${{ vars.SITE_URL }}
+          SITE_URL: ${{ vars.SITE_URL != '' && vars.SITE_URL || 'https://clash-cn.com' }}
         run: npm run build
 
       - name: Publish Bing update
-        if: steps.changes.outputs.files != '' || github.event.inputs.push_all == 'true'
+        if: steps.commit.outputs.changed == 'true' || github.event.inputs.push_all == 'true'
+        continue-on-error: true
         env:
-          SITE_URL: ${{ vars.SITE_URL }}
-          BING_INDEXNOW_KEY: ${{ secrets.BING_INDEXNOW_KEY }}
-          CHANGED_FILES: ${{ steps.changes.outputs.files }}
-          PUSH_ALL: ${{ github.event.inputs.push_all || 'false' }}
-        run: npm run push:bing -- ${{ github.event.inputs.push_all == 'true' && '--all' || '' }}
+          SITE_URL: ${{ vars.SITE_URL != '' && vars.SITE_URL || 'https://clash-cn.com' }}
+          BING_API_KEY: ${{ secrets.BING_API_KEY }}
+        run: npm run push:bing:${{ github.event.inputs.push_all == 'true' && 'all' || 'updated' }}

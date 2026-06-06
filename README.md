@@ -23,10 +23,26 @@ npm run build
 
 ## 自动文章
 
-GitHub Actions `Daily Gemini Article` 每天生成 1 篇文章，也可手动输入 `1-9` 批量生成。需要配置：
+GitHub Actions `Daily Gemini Article` 每天生成 1 篇文章，也可手动选择 1-9 篇批量生成。
 
-- Repository secret: `GEMINI_API_KEY`
-- Repository secret: `BING_INDEXNOW_KEY`
-- Repository variable: `SITE_URL`
+## GitHub 配置
 
-首次推送全部公开地址时，手动运行工作流并将 `push_all` 设置为 `true`。之后有文章更新时，只提交本次新增文章地址。
+在仓库 Settings → Secrets and variables → Actions 中设置：
+
+| 类型 | 名称 | 值 |
+|------|------|-----|
+| Secret | `GEMINI_API_KEY` | Gemini API 密钥 |
+| Secret | `BING_API_KEY` | 必应站长工具 API Key |
+| Variable | `SITE_URL` | `https://clash-cn.com` |
+
+## 必应 URL 提交
+
+```bash
+set SITE_URL=https://clash-cn.com
+set BING_API_KEY=your_bing_key
+npm run build
+npm run push:bing:all
+npm run push:bing:updated
+```
+
+首次全站推送：手动运行工作流，`push_all` 选 `true`。之后保持 `false`，只提交新文章。

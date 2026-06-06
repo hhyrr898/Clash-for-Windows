@@ -32,8 +32,7 @@ jobs:
 
       - name: Build
         env:
-          SITE_URL: ${{ vars.SITE_URL }}
-          BING_INDEXNOW_KEY: ${{ secrets.BING_INDEXNOW_KEY }}
+          SITE_URL: ${{ vars.SITE_URL != '' && vars.SITE_URL || 'https://clash-cn.com' }}
         run: npm run build
 
       - name: Upload artifact

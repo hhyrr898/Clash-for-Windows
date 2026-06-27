@@ -1,7 +1,7 @@
 ---
 layout: base.njk
-title: Clash for Windows 下载中心 - Windows macOS Android iOS
-description: Clash for Windows 下载中心整理 Windows、macOS、Android、iOS 四类客户端资料与安装前准备说明。
+title: Clash for Windows 下载中心与配置参考
+description: Clash for Windows 下载中心整理 Windows 客户端资料、安装前准备，以及 macOS、Android、iOS 相近客户端配置参考。
 permalink: /download.html
 ---
 <section class="page-hero download-hero">
@@ -17,9 +17,9 @@ permalink: /download.html
     <div class="download-grid four">
       {% set downloads = [
         ["Windows 版", "Clash for Windows Windows 下载", "windows-ban", "适合 Windows 10 / 11 桌面环境，建议先阅读安装教程并备份旧配置。"],
-        ["macOS 版", "Clash for Windows macOS 下载", "macos-ban", "适合 macOS 桌面环境，注意系统权限、代理开关和配置文件位置。"],
-        ["Android 版", "Clash for Windows Android 下载", "android-ban", "适合安卓移动端参考，重点关注订阅导入、开关状态与后台运行。"],
-        ["iOS 版", "Clash for Windows iOS 下载", "ios-ban", "适合 iPhone 与 iPad 用户参考相近客户端的配置方式。"]
+        ["macOS 配置参考", "Clash for Windows macOS 配置参考", "macos-ban", "适合 macOS 桌面环境，注意系统权限、代理开关和配置文件位置。"],
+        ["Android 配置参考", "Clash for Windows Android 配置参考", "android-ban", "适合安卓移动端参考，重点关注订阅导入、开关状态与后台运行。"],
+        ["iOS 配置参考", "Clash for Windows iOS 配置参考", "ios-ban", "适合 iPhone 与 iPad 用户参考相近客户端的配置方式。"]
       ] %}
       {% for item in downloads %}
       <article class="download-card" id="{{ item[2] }}">

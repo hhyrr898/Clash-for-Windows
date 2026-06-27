@@ -3,16 +3,36 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ title or site.name }}</title>
-    <meta name="description" content="{{ description or site.description }}">
-    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+    {% set docTitle = title or site.name %}
+    {% set metaDescription = description or site.description %}
+    {% set canonical = site.url + (canonicalUrl or page.url or "/") %}
+    <title>{{ docTitle }}</title>
+    <meta name="description" content="{{ metaDescription }}">
+    {% if noindex %}
+    <meta name="robots" content="noindex,follow">
+    {% else %}
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    {% endif %}
+    <link rel="canonical" href="{{ canonical }}">
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="stylesheet" href="/assets/styles.css">
-    <meta property="og:title" content="{{ title or site.name }}">
-    <meta property="og:description" content="{{ description or site.description }}">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:title" content="{{ docTitle }}">
+    <meta property="og:description" content="{{ metaDescription }}">
+    <meta property="og:type" content="{% if layout == 'post.njk' %}article{% else %}website{% endif %}">
+    <meta property="og:url" content="{{ canonical }}">
     <meta property="og:image" content="{{ cover or site.logo }}">
+    <meta property="og:site_name" content="{{ site.name }}">
+    <meta property="og:locale" content="zh_CN">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{{ {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": site.name,
+  "url": site.url,
+  "description": site.description
+} | dump | safe }}
+    </script>
     {% if video %}
     <script type="application/ld+json">
       {
@@ -61,7 +81,7 @@
         </nav>
       </div>
     </footer>
-    <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
-    <script>LA.init({id:"3LYbKlm7CWKiFWs3",ck:"3LYbKlm7CWKiFWs3"})</script>
+    <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js" defer></script>
+    <script>window.addEventListener("load",function(){if(window.LA){LA.init({id:"3LYbKlm7CWKiFWs3",ck:"3LYbKlm7CWKiFWs3"})}})</script>
   </body>
 </html>

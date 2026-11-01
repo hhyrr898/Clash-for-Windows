@@ -6,11 +6,11 @@
   "slugPrefix": "clash",
   "keywordsPath": "src/keywords.json",
   "linkPool": [
-    "/blogclash-for-windows-android-guide/",
-    "/blogclash-for-windows-install-guide/",
-    "/blogclash-for-windows-ios-guide/",
-    "/blogclash-for-windows-log-reading/",
-    "/blogclash-for-windows-macos-setup/"
+    "/blog/clash-for-windows-android-guide/",
+    "/blog/clash-for-windows-install-guide/",
+    "/blog/clash-for-windows-ios-guide/",
+    "/blog/clash-for-windows-log-reading/",
+    "/blog/clash-for-windows-macos-setup/"
   ],
   "minChars": 750,
   "maxChars": 2200,

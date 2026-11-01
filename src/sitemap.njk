@@ -28,10 +28,4 @@ eleventyExcludeFromCollections: true
   </url>
 {% endif %}
 {% endfor %}
-{% for tag in collections.tagList %}
-  <url>
-    <loc>{{ site.url }}/tags/{{ tag | tagSlug }}/</loc>
-    <lastmod>{{ collections.postsByDate[0].date | htmlDate }}</lastmod>
-  </url>
-{% endfor %}
 </urlset>

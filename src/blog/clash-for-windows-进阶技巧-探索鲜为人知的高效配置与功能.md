@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 进阶技巧：探索鲜为人知的高效配置与功能"
 description: "深入了解 Clash for Windows 的各类配置项与实用功能，解决特定使用场景难题，提升网络体验。告别基础设置，玩转个性化代理。"

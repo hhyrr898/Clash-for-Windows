@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "玩转 Clash for Windows：长尾应用与深度配置指南"
 description: "深入挖掘 Clash for Windows 的无限可能，从基础配置到高级规则，本文为您揭示其多样化长尾应用，助您实现更个性化的网络管理。"

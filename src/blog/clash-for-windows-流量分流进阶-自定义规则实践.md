@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 流量分流进阶：自定义规则实践"
 description: "详细探讨 Clash for Windows 中流量分流的自定义规则应用，助您精准掌控网络访问，解决特定场景下的代理难题。告别一刀切，享受更精细化的网络体验。"

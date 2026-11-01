@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: Clash for Windows 日志查看入门
 description: 介绍 Clash for Windows 日志页面中常见提示的含义，帮助用户判断订阅、端口和连接问题。

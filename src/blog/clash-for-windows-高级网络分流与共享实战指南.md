@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows：高级网络分流与共享实战指南"
 description: "Clash for Windows 不止基础代理，本文深入探讨其在复杂网络环境下的进阶应用。从精细分流到局域网共享，助您驾驭个性化连接，提升网络体验。"

@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 疑难杂症与高级应用场景解析"
 description: "本指南专注于 Clash for Windows 用户在特定情境下遇到的问题，提供细致入微的配置、功能解读与解决方案，帮助您充分发挥其潜力，应对更复杂的网络环境挑战。"

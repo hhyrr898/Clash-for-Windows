@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "深入探索Clash for Windows：配置与使用全指南"
 description: "Clash for Windows是强大的代理工具。本文带您深入了解其基础功能、订阅管理、规则配置与进阶使用，助您轻松驾驭网络。"

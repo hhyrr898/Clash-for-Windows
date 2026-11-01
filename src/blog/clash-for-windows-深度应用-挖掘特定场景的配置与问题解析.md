@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 深度应用：挖掘特定场景的配置与问题解析"
 description: "本文深入解析 Clash for Windows 在多样化网络环境下的进阶配置策略。从特定应用分流到复杂路由规则定制，旨在帮助用户高效解决实际使用痛点，充分发掘其强大潜力。"

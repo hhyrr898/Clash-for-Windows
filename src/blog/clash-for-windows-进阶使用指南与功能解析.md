@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 进阶使用指南与功能解析"
 description: "探索 Clash for Windows 的深层机制，了解其强大的网络路由与策略控制能力。本文将带您发掘这款工具的隐藏潜力，实现个性化网络体验。"

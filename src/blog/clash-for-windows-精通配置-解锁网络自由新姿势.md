@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows：精通配置，解锁网络自由新姿势"
 description: "深入探索Clash for Windows的各项功能与实用技巧，从基础设置到高级路由策略，助您轻松驾驭网络代理，实现无界浏览体验。"

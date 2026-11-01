@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 深度探索：解锁网络自由的进阶之路"
 description: "本篇文章旨在深入剖析Clash for Windows的各项高级功能与配置技巧。从配置文件定制到流量分流策略，帮助用户充分驾驭这款强大的网络工具，实现更灵活、安全、高效的网络连接体验。"

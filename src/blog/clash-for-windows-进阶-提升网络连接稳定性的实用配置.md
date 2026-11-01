@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 进阶：提升网络连接稳定性的实用配置"
 description: "深入探讨Clash for Windows在复杂网络环境下的配置策略与故障排除，帮助用户实现稳定、流畅的网络体验。掌握高级功能，告别连接困扰。"

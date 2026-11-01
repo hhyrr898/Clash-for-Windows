@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows：高效管理订阅与精细化代理设置"
 description: "深入探讨 Clash for Windows 在订阅管理、代理模式选择及个性化规则配置方面的核心功能，助您轻松驾驭网络流量。"

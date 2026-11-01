@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 深度探秘：多场景下的高级配置与技巧"
 description: "探索 Clash for Windows 在复杂网络环境中的精细化设置与高效利用之道，助您充分发挥其强大潜力，满足个性化连接需求。"

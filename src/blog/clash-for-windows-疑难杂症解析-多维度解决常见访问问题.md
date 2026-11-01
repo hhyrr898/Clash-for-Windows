@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 疑难杂症解析：多维度解决常见访问问题"
 description: "Clash for Windows 在日常使用中可能遇到各种网络访问困扰。本文深入探讨特定场景下的问题原因与解决方案，助您稳定高效地管理网络流量。"

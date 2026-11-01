@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: Clash for Windows 连接状态检查方法
 description: 从系统代理、端口、日志、订阅和策略组几个角度检查 Clash for Windows 连接状态。

@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 深入解析：解决特定网络问题的技巧"
 description: "探索 Clash for Windows 的高级功能，学习如何针对复杂网络环境进行精细化配置，有效解决各类上网难题，提升您的网络体验。不再受限于通用设置，实现真正的个性化网络管理。"

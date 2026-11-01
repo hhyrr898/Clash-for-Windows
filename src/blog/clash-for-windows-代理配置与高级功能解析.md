@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows：代理配置与高级功能解析"
 description: "Clash for Windows作为一款流行的网络代理客户端，以其强大的规则处理能力和直观的用户界面备受青睐。本文将带您了解其核心功能与使用技巧。"

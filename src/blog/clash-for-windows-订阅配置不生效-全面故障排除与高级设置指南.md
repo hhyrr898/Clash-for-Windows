@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 订阅配置不生效？全面故障排除与高级设置指南"
 description: "深入探讨 Clash for Windows 订阅设置失效的常见原因。从基础配置到高级规则，助您轻松解决网络连接问题，享受流畅体验。"

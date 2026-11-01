@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 进阶配置：解锁更多网络可能"
 description: "深入探索 Clash for Windows 的高级功能与长尾应用场景，帮助用户挖掘其在复杂网络环境下的潜力，实现更个性化的网络管理。"

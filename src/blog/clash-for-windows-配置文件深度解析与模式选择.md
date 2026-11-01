@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 配置文件深度解析与模式选择"
 description: "深入了解Clash for Windows配置文件结构，掌握代理模式选择技巧，轻松应对复杂网络环境，提升网络体验。"

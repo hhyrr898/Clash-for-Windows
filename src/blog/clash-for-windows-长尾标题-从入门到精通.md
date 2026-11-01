@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 长尾标题：从入门到精通"
 description: "本文深入介绍Clash for Windows的安装、配置与高级用法，助您轻松驾驭网络代理，享受流畅上网体验。"

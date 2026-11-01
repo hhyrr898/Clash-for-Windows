@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 高效配置与进阶使用指南"
 description: "Clash for Windows 不仅是代理工具，更是网络管理利器。本文将深入解析其配置方法与实用技巧，助您轻松驾驭复杂的网络环境。"

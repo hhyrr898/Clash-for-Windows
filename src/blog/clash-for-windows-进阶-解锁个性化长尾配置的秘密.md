@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 进阶：解锁个性化长尾配置的秘密"
 description: "深入探讨Clash for Windows中那些不常见但极具价值的长尾配置。本文将助您理解并应用特定场景下的高级网络策略，实现更精细、个性化的网络管理。"

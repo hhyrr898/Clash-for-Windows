@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "围绕 Clash for Windows 打造智能网络体验"
 description: "深入探讨 Clash for Windows 的高级功能与实用技巧，助您精细化管理网络流量，告别卡顿与延迟，享受流畅互联。"

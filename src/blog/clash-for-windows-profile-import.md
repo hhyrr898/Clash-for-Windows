@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: Clash for Windows 订阅配置导入方法
 description: 介绍 Clash for Windows 中订阅配置的添加、更新、切换与备份方式。

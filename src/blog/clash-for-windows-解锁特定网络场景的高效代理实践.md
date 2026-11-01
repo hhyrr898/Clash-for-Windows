@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows：解锁特定网络场景的高效代理实践"
 description: "Clash for Windows 不仅是代理工具，更是个性化网络管理的利器。本文深入探讨其在复杂网络环境下的独特应用，助您轻松搭建稳定、高效的专属代理方案，实现更智能的网络连接。"

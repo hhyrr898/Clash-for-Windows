@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 规则配置进阶：深度解析自定义代理分流技巧"
 description: "深入了解Clash for Windows高级配置，掌握自定义规则、分流策略与故障排查，助您高效管理网络代理连接，享受流畅网络体验。"

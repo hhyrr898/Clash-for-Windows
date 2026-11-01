@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 深度指南：轻松驾驭您的网络"
 description: "本篇文章为您详细介绍 Clash for Windows 的各项实用功能与配置技巧，助您轻松搭建稳定高效的个性化网络环境，享受流畅无阻的上网体验。"

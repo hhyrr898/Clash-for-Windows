@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 进阶使用：解锁更多代理配置可能"
 description: "深入探索 Clash for Windows 的配置文件管理、规则定制与模式选择。掌握核心技巧，让你的代理体验更稳定、更灵活、更符合个性化需求，轻松应对复杂网络环境。"

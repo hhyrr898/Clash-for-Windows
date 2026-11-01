@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 订阅配置与高效网络体验指南"
 description: "深入了解 Clash for Windows 的订阅管理、规则配置及常见问题解决。助您轻松搭建稳定高效的个性化网络环境，提升使用体验。"

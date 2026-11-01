@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 深度配置：解锁进阶网络体验"
 description: "探索 Clash for Windows 的细致功能，从订阅管理到自定义路由，助您构建个性化网络环境，提升连接效率与隐私保护。"

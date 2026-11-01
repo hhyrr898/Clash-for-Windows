@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 疑难杂症全解：告别网络连接困扰"
 description: "Clash for Windows 是一款高效的网络代理客户端。本文将针对用户在使用过程中可能遇到的常见问题与配置难点进行详细剖析，提供实用解决方案，助您轻松驾驭，享受稳定流畅的上网体验。"

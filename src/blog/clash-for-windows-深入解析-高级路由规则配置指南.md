@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 深入解析：高级路由规则配置指南"
 description: "本文旨在详细介绍Clash for Windows中的高级路由规则配置，助您精准管理网络流量，解决复杂场景下的分流问题，优化上网体验。"

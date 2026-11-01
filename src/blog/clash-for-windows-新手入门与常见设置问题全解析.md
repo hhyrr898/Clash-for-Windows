@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows：新手入门与常见设置问题全解析"
 description: "本文为您详细介绍Clash for Windows的基础用法，深度解析用户在使用过程中常遇到的连接、规则及界面设置难题，助您轻松驾驭此强大工具。"

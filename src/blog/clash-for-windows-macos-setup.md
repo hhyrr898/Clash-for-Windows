@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: Clash for Windows macOS 配置参考
 description: 为 macOS 用户整理 Clash for Windows 相近桌面客户端的权限、配置导入与连接检查思路。

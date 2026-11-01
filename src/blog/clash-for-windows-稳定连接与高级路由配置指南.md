@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 稳定连接与高级路由配置指南"
 description: "深入了解 Clash for Windows 的核心功能，从基础设置到进阶路由策略，助您实现更灵活、更可靠的网络代理体验。"

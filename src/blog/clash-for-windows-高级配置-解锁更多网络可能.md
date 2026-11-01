@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 高级配置：解锁更多网络可能"
 description: "深入了解 Clash for Windows 的进阶用法，助您灵活管理网络代理，享受稳定流畅的上网体验。无论是规则定制还是流量统计，都能轻松掌握。"

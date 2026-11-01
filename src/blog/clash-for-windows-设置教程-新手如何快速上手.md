@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 设置教程：新手如何快速上手？"
 description: "本文为您详细介绍 Clash for Windows 的安装、配置与日常使用。即使是初次接触代理工具，也能轻松掌握，享受便捷的网络体验。"

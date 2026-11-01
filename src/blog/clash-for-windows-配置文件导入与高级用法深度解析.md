@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 配置文件导入与高级用法深度解析"
 description: "深入了解Clash for Windows的配置管理与进阶技巧，助您轻松驾驭网络代理，享受流畅稳定的上网体验。"

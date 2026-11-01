@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: Clash for Windows 开机启动设置建议
 description: 介绍 Clash for Windows 是否需要开机启动，以及启动后应检查的系统代理和配置状态。

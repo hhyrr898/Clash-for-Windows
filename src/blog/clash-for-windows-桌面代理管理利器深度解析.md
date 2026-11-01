@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows：桌面代理管理利器深度解析"
 description: "Clash for Windows 作为桌面代理软件，以其强大的规则引擎、灵活的配置能力和用户友好的界面，为用户提供高效稳定的网络连接方案。本文将详细介绍其核心功能与使用技巧。"

@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: Clash for Windows 版本整理与更新记录
 description: 记录 Clash for Windows 版本变化、迁移注意事项和更新前后的检查流程。

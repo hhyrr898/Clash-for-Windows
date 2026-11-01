@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 深度探索：配置、模式与常见问题"
 description: "深入了解Clash for Windows的高级配置、运行模式选择以及常见问题解决方案，助您打造稳定高效的个性化网络环境。"

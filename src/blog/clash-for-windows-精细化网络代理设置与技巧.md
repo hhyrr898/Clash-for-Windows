@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows：精细化网络代理设置与技巧"
 description: "深入探索 Clash for Windows 的高级功能，学习如何进行精细化代理设置，解决常见网络问题，提升您的代理使用体验，告别网络困扰。"

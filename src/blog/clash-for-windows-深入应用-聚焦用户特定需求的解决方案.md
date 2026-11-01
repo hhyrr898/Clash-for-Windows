@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 深入应用：聚焦用户特定需求的解决方案"
 description: "本文深入探讨Clash for Windows如何通过精细化配置，应对多样化的网络环境和用户专属诉求，助您轻松定制专属网络体验。"

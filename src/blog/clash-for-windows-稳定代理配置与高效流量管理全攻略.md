@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 稳定代理配置与高效流量管理全攻略"
 description: "深入浅出地介绍Clash for Windows的核心功能，助您轻松搭建稳定代理环境，实现个性化网络分流，提升上网体验。"

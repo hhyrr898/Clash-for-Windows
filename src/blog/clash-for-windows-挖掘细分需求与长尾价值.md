@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows：挖掘细分需求与长尾价值"
 description: "本文深入探讨Clash for Windows在特定小众需求下的应用，揭示如何发现并满足用户独特使用场景，从而扩大其价值范围。"

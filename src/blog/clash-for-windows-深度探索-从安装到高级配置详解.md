@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 深度探索：从安装到高级配置详解"
 description: "Clash for Windows 是一款功能强大的网络代理工具。本文将带您了解其安装部署、核心功能解析、规则配置与故障排查，助您掌握高效网络管理。"

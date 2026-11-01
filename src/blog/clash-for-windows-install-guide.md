@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: Clash for Windows Windows 版安装教程
 description: 面向 Windows 用户的 Clash for Windows 安装流程，涵盖准备、启动、配置导入与基础检查。

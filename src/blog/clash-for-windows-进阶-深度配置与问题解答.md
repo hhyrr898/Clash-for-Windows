@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 进阶：深度配置与问题解答"
 description: "探索 Clash for Windows 的高级功能，解决在使用中遇到的各类细致问题，打造个性化代理环境。"

@@ -1,0 +1,26 @@
+{
+  "brand": "Clash for Windows",
+  "domain": "clash-cn.com",
+  "locale": "zh-CN",
+  "blogDir": "src/blog",
+  "slugPrefix": "clash",
+  "keywordsPath": "src/keywords.json",
+  "linkPool": [
+    "/blogclash-for-windows-android-guide/",
+    "/blogclash-for-windows-install-guide/",
+    "/blogclash-for-windows-ios-guide/",
+    "/blogclash-for-windows-log-reading/",
+    "/blogclash-for-windows-macos-setup/"
+  ],
+  "minChars": 750,
+  "maxChars": 2200,
+  "fm": {
+    "layout": "post.njk",
+    "hasCategory": false,
+    "tagsStyle": "json",
+    "firstTag": "post",
+    "permalink": true,
+    "coverKey": "cover",
+    "coverDir": "/static/posts/"
+  }
+}

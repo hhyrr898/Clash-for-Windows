@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 高级配置：实现个性化网络代理策略"
 description: "深入探索Clash for Windows的高级配置选项，学习如何自定义代理规则、提升网络体验，解决常见使用困扰。"

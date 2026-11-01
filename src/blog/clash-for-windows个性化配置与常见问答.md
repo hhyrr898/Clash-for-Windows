@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows个性化配置与常见问答"
 description: "深入了解Clash for Windows的各类使用场景，解决特定配置难题，助您轻松玩转这款网络工具。"

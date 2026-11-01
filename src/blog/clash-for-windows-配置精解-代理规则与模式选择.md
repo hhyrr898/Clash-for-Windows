@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 配置精解：代理规则与模式选择"
 description: "深入解析Clash for Windows核心配置、代理规则与常见问题解决，助您轻松驾驭网络流量，实现个性化连接体验。"

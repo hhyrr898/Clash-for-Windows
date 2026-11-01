@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows：小众需求与高级配置解析"
 description: "本文深入探讨 Clash for Windows 在特定场景下的应用技巧，帮助用户解决罕见问题，掌握进阶功能配置，提升网络体验。"

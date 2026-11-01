@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows：从入门到精通的个性化网络管理指南"
 description: "深度解析Clash for Windows的安装、配置与高级应用。助您高效管理网络流量，实现更自由、安全的上网体验。"

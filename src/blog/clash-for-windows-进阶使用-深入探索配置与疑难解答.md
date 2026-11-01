@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 进阶使用：深入探索配置与疑难解答"
 description: "本文为您详细介绍Clash for Windows的个性化配置、复杂路由规则、日志分析与常见问题解决，助您更高效地管理网络代理，体验稳定连接。"

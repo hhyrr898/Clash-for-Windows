@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows：核心配置与进阶路由策略指南"
 description: "深入解析Clash for Windows在代理规则、节点选择及流量管理上的高级应用，助你构建高效稳定的个性化网络环境。"

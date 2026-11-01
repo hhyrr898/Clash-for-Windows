@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 深度配置指南：解锁高级网络功能与个性化代理设置"
 description: "Clash for Windows 不仅仅是代理工具。本文将带您深入了解其配置细节，解决常见网络问题，助您充分利用Clash for Windows，实现更流畅、更安全的网络体验。"

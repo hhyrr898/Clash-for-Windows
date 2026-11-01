@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "深入探索Clash for Windows：精通配置，告别网络困扰"
 description: "Clash for Windows不仅是工具，更是网络自由的钥匙。本文带你解锁进阶功能，解决特殊网络环境下的复杂问题，享受更流畅的上网体验。"

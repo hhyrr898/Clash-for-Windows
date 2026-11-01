@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 连接异常？全面排查与解决之道"
 description: "遇到Clash for Windows无法正常连接的困扰？本文将深入解析常见故障原因，并提供详细的排查步骤和解决方案，助您快速恢复稳定的网络访问。"

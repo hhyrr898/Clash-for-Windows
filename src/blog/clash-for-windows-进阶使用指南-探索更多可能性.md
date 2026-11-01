@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 进阶使用指南：探索更多可能性"
 description: "Clash for Windows 不止于基础配置，本文深入剖析其多样化功能与特定场景应用，助您充分发挥这款代理工具的强大潜力。"

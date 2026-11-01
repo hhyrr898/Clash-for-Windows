@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 无法上网怎么解决？详细配置与常见问题处理"
 description: "本文详细介绍了 Clash for Windows 用户在配置和使用中遇到的网络连接问题及订阅管理技巧，助您轻松上手，畅享稳定代理体验。"

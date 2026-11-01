@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows：个性化网络掌控指南"
 description: "Clash for Windows 不仅是强大的代理工具，更是网络流量精细化管理的利器。本文带你深入了解其核心功能，解锁各类网络环境下的定制化体验，轻松应对复杂需求。"

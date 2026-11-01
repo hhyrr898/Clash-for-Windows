@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 高级配置：解锁个性化网络体验指南"
 description: "深入探索Clash for Windows的核心机制，学习如何精细化配置规则、定制代理组，并解决常见问题，打造专属高效网络环境。"

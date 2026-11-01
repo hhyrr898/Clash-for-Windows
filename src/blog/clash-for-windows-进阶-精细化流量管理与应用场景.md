@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 进阶：精细化流量管理与应用场景"
 description: "本文深入探讨 Clash for Windows 的高级用法，助您实现精细化流量控制，提升特定应用程序的网络体验。"

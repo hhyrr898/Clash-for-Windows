@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 特定场景配置指南与常见问题解决"
 description: "本文深入探讨Clash for Windows在各种个性化网络环境下的配置方法，解答用户在复杂应用中遇到的常见疑问，助您充分利用其强大功能。"

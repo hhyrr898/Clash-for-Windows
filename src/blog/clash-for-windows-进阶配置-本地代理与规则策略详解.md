@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 进阶配置：本地代理与规则策略详解"
 description: "深入探索Clash for Windows在不同网络环境下的灵活应用与精细化管理。从配置文件导入到自定义规则设置，一站式解决复杂代理需求。"

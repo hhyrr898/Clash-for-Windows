@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 高级用法：代理规则与策略组实战指南"
 description: "深入了解 Clash for Windows 的高级配置。本文聚焦代理规则与策略组的实战应用，助您精准管理网络流量，解决复杂问题，提升使用体验。"

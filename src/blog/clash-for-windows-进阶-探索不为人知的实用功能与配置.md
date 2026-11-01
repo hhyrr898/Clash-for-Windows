@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 进阶：探索不为人知的实用功能与配置"
 description: "Clash for Windows 不仅是强大代理工具，更蕴藏诸多实用技巧。本文带您深入了解其配置管理、规则定制与问题诊断，助您高效驾驭网络连接，解决个性化需求。"

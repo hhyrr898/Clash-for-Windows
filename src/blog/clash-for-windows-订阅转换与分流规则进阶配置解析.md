@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 订阅转换与分流规则进阶配置解析"
 description: "深入探讨Clash for Windows中订阅链接的灵活转换，以及如何精细化定制分流规则，满足个性化网络使用需求，提升连接体验。"

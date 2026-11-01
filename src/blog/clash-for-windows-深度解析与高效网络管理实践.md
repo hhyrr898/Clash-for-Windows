@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows：深度解析与高效网络管理实践"
 description: "Clash for Windows 是一款领先的网络代理客户端，本文将带你全面了解其安装、核心功能与进阶配置，助你轻松构建个性化网络环境。"

@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 疑难杂症与深度配置技巧解析"
 description: "深入探究 Clash for Windows 在不同网络环境下的适配、性能调优及各类报错的解决之道，助您更稳定高效地使用。"

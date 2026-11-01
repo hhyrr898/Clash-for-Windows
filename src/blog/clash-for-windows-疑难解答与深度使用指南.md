@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 疑难解答与深度使用指南"
 description: "Clash for Windows 用户常见问题与进阶配置解析，涵盖订阅设置、代理规则、性能调试等，助您轻松驾驭网络代理工具，享受流畅体验。"

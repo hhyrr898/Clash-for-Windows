@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows：特定场景下网络代理的深度解析与配置实践"
 description: "Clash for Windows 是强大的网络代理工具。本文将探讨其在复杂网络环境中的配置细节、分流策略应用，助您实现高效稳定的网络访问体验。"

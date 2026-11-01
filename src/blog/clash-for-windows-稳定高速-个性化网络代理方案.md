@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows：稳定高速，个性化网络代理方案"
 description: "探索 Clash for Windows 的强大功能，轻松管理你的网络代理规则，实现安全、高效的上网体验。告别繁琐设置，畅享无界网络。"

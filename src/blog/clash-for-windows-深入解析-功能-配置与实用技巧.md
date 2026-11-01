@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 深入解析：功能、配置与实用技巧"
 description: "本文全面介绍 Clash for Windows，从基础功能到高级配置，助您轻松掌握这款强大工具，提升网络连接体验与管理效率。适合初学者及进阶用户。"

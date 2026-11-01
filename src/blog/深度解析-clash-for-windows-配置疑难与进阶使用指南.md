@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "深度解析：Clash for Windows 配置疑难与进阶使用指南"
 description: "Clash for Windows 是一款强大的代理工具。本文深入探讨其长尾配置、连接异常及功能拓展，助您高效稳定地管理网络流量。"

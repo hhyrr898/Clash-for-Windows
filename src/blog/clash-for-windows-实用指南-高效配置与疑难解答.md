@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 实用指南：高效配置与疑难解答"
 description: "本文深入探讨Clash for Windows的多种配置方案，帮助用户理解不同代理模式，并提供常见问题的高效解决方案，助您稳定畅游网络。"

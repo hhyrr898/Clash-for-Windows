@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 深度配置指南：解锁高级功能与稳定连接"
 description: "探索Clash for Windows的进阶设置，从订阅管理到规则自定义，确保流畅稳定的网络体验，满足各类个性化需求。"

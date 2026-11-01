@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: Clash for Windows 端口设置说明
 description: 说明 Clash for Windows 本地端口、系统代理端口和应用单独配置之间的关系。

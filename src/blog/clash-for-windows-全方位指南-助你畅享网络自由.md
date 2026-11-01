@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows：全方位指南，助你畅享网络自由"
 description: "深入了解Clash for Windows，一款功能强大的网络代理客户端，助您轻松管理网络连接，提升上网体验。掌握其核心功能与配置技巧。"

@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 用户福音：高效订阅管理与网络加速秘籍"
 description: "本篇指南深入剖析Clash for Windows的订阅配置、代理模式选择与流量分发策略。无论新手老手，都能轻松掌握，解锁极速网络体验，确保数据传输安全稳定。告别繁琐设置，享受畅游互联网的便利。"

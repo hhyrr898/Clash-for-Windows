@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows进阶：深度配置与常见疑难解析"
 description: "本指南深入Clash for Windows进阶应用，涵盖复杂规则定制、提升性能表现及各类疑难杂症的应对方案，助您全面掌握软件潜力，畅享稳定网络。"

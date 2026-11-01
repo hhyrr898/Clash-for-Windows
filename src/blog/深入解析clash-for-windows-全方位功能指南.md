@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "深入解析Clash for Windows：全方位功能指南"
 description: "Clash for Windows是一款功能强大的代理客户端。本文将详细介绍其配置、使用技巧及常见问题解决方案，助您轻松驾驭网络连接，体验流畅上网。"

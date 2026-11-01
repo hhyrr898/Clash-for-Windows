@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: Clash for Windows Android 使用参考
 description: 面向 Android 场景整理 Clash for Windows 相近客户端的订阅导入、后台运行与网络切换方法。

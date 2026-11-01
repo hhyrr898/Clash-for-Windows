@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: Clash for Windows iOS 使用参考
 description: 为 iPhone 与 iPad 用户整理 Clash for Windows 相近客户端的配置导入、策略选择和连接检查方法。

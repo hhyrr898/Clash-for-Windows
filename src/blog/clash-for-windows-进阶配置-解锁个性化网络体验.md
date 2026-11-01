@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 进阶配置：解锁个性化网络体验"
 description: "Clash for Windows 不止基础代理。本文深入探讨其进阶功能，助你定制专属网络规则，提升连接稳定性和私密性，探索更多网络自由。从新手到高阶，轻松驾驭。"

@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 进阶：解锁多场景应用与常见问题对策"
 description: "深入了解 Clash for Windows 各类实用功能与疑难杂症解决方案。从订阅配置到高级规则，让您的代理体验更顺畅。"

@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 实用技巧：解锁高效网络体验"
 description: "本文为您深入介绍 Clash for Windows 的各项实用技巧，助您解决日常使用中遇到的常见问题，充分发挥其强大功能，享受稳定流畅的网络连接。"

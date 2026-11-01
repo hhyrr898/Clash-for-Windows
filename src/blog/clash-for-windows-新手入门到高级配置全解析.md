@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows：新手入门到高级配置全解析"
 description: "Clash for Windows作为广受欢迎的代理客户端，本文详细介绍其安装、基础设置、配置文件管理及常见问题解决，助您轻松上手，畅享网络。"

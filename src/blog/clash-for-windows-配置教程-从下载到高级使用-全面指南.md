@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 配置教程：从下载到高级使用，全面指南"
 description: "Clash for Windows是一款强大的代理工具。本文详细介绍如何下载、安装、配置Clash for Windows，助您轻松管理网络连接，畅享稳定高效的网络体验。"

@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: Clash for Windows 策略组整理方法
 description: 介绍 Clash for Windows 策略组命名、切换、备用节点和日常维护方法。

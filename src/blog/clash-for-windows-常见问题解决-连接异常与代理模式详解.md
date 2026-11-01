@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 常见问题解决：连接异常与代理模式详解"
 description: "深入了解 Clash for Windows 的配置流程、节点选择与模式切换，助您轻松应对网络连接难题，享受流畅的上网体验。"

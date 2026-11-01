@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 规则集与分组策略深度解析"
 description: "深入探讨 Clash for Windows 中规则集与代理分组的精髓。助你精确掌控网络流量走向，实现高效且个性化的代理使用体验，告别传统配置难题。"

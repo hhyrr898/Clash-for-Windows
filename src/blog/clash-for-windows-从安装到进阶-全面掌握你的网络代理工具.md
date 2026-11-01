@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows：从安装到进阶，全面掌握你的网络代理工具"
 description: "本指南深入探讨Clash for Windows的安装配置、核心功能、高级玩法与常见问题解决方案，助你高效管理网络连接。"

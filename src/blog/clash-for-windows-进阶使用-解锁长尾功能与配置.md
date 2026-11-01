@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 进阶使用：解锁长尾功能与配置"
 description: "深入探索 Clash for Windows 的长尾功能与配置技巧，从基础设置到高级路由，助您充分利用这款强大的代理工具，应对复杂网络环境挑战。"

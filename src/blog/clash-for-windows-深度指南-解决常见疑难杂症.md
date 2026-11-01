@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 深度指南：解决常见疑难杂症"
 description: "Clash for Windows 用户面临的多种配置难题与使用技巧？本文将深入探讨，助您轻松驾驭这款强大的代理工具，畅享无界网络体验。"

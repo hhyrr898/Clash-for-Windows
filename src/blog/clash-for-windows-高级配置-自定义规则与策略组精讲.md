@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 高级配置：自定义规则与策略组精讲"
 description: "深入了解 Clash for Windows 的自定义规则与策略组配置，掌握精细化流量路由与管理技巧，助您构建个性化网络环境。"

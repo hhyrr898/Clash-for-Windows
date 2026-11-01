@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: Clash for Windows 代理模式怎么选择
 description: 说明 Clash for Windows 中常见代理模式的差异，帮助用户按场景选择合适方式。

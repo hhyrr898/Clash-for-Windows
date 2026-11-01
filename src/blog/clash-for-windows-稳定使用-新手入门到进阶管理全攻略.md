@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 稳定使用：新手入门到进阶管理全攻略"
 description: "深入解析 Clash for Windows 的各项功能，助您轻松上手，实现稳定高效的网络代理管理。从基础配置到高级应用，全面掌握这款强大工具。"

@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 配置指南：新手入门到订阅常见问题解决"
 description: "深入了解 Clash for Windows 的安装、配置与使用。从初次运行到解决订阅链接失效等常见疑难，助您轻松驾驭网络代理工具。"

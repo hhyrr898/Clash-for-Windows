@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 高级进阶：深度解析与灵活配置指南"
 description: "深入探索 Clash for Windows 的强大功能，从基础配置到高级策略，助您充分利用这款工具，构建更灵活的网络环境，提升上网体验和效率。"

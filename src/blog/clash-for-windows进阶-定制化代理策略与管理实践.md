@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows进阶：定制化代理策略与管理实践"
 description: "深度剖析Clash for Windows的强大功能，指导用户如何根据特定需求，精细配置代理规则，高效管理多份网络配置文件，实现更智能的网络连接。"

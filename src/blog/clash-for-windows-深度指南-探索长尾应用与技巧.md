@@ -1,4 +1,5 @@
 ---
+noindex: true
 layout: post.njk
 title: "Clash for Windows 深度指南：探索长尾应用与技巧"
 description: "Clash for Windows 不仅仅是基础代理工具。本文深入挖掘其鲜为人知的功能与配置，帮助用户解锁更强大、更个性化的网络体验。从复杂路由到特定场景，一应俱全。"

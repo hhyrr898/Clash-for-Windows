@@ -1,5 +1,4 @@
 ---
-noindex: true
 layout: post.njk
 title: "Clash for Windows 最终版 0.20.39 下载与安装实操"
 description: "Clash for Windows 已于 2023 年停止更新，最后一个版本是 0.20.39。本文以实操口吻记录我获取与安装这个收尾版本的全过程：如何核对版本号、安装时注意哪些选项、首次启动后要做的四步配置，以及安装包"

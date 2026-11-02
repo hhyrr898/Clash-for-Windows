@@ -1,5 +1,4 @@
 ---
-noindex: true
 layout: post.njk
 title: "Clash for Windows 订阅链接导入完整教程"
 description: "以 Clash for Windows 0.20.39 为例，手把手演示从复制订阅链接到节点可用的全流程。涵盖获取链接、导入配置、选择节点、验证连通性四个步骤，并解答常见导入失败原因。适合首次接触 Clash 的用户对照"

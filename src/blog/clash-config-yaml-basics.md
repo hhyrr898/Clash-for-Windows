@@ -1,5 +1,4 @@
 ---
-noindex: true
 layout: post.njk
 title: "Clash for Windows 配置文件 yaml 入门：代理、规则与策略组结构"
 description: "以 Clash for Windows 0.20.39 为例，手把手拆解订阅配置文件：从打开 YAML 目录、看懂 proxies 代理列表、proxy-groups 策略组，到 rules 规则匹配顺序，配 4 步实操"

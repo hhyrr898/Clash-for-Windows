@@ -1,5 +1,4 @@
 ---
-noindex: true
 layout: post.njk
 title: "Clash for Windows 开启 TUN 模式的实操记录"
 description: "以 Clash for Windows 0.20.39 为例，一步步记录 TUN 模式的虚拟网卡安装过程，并整理我实际遇到的几类报错：服务未安装、网卡未创建、DNS 泄漏与流量回环，附排查思路和常用命令，适合想用全局代理"

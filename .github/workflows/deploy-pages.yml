@@ -27,12 +27,13 @@ jobs:
 
       - name: Build Eleventy Site
         env:
-          SITE_URL: ${ '{' } vars.SITE_URL != '' && vars.SITE_URL || 'https://clash-cn.com' { '}' }
+          SITE_URL: https://clash-cn.com
+          SITE_DOMAIN: https://clash-cn.com
         run: npm run build
 
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
-          apiToken: ${ '{' } secrets.CLOUDFLARE_API_TOKEN { '}' }
-          accountId: ${ '{' } secrets.CLOUDFLARE_ACCOUNT_ID { '}' }
-          command: pages deploy _site --project-name=clash-cn --commit-dirty=true
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy _site --project-name=clash-for-windows --commit-dirty=true

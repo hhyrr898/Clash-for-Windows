@@ -1,5 +1,4 @@
 ---
-noindex: true
 layout: post.njk
 title: "Clash for Windows 与 v2rayN 对比：功能、占用与上手难度"
 description: "我从功能、内存占用和上手难度三个角度对比 Clash for Windows 与 v2rayN，记录实测版本、四步实操验证方法、常见问题，并说明 Clash for Windows 已于 2023 年停止更新、最后版本 "
